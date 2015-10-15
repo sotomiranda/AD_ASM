@@ -1,18 +1,13 @@
 <?php
-	$random = rand(1,100);
+	$title = 'E1';
+	$texto = 'Numero aleatorio entre 1 y 100, ambos inclusive.';
+	$aleatorio = rand(1,100);
 ?>
 
 <html>
-	<title>
-		e1
-	</title>
+	<title><?php echo $title ?></title>
 	<body>
-		<u><b>
-			Numero aleatorio entre 100 y 200, ambos inclusive
-		</b></u>
-		<br>
-		<h1>
-			<input type="textbox" style="border-size=1px; width:20px; border-color: red; text-align:center; background-color: aqua;" readonly value=<?php echo $random ?>>
-		</h1>
+		<p><b><u><?php echo $texto ?></u></b></p>
+		<input name="aleatorio" readonly="readonly" style="width: 20px; border: 1px solid red; background-color: aqua; color: green; text-align: center;" value="<?php echo $aleatorio ?>"/>
 	</body>
-</html>
+	</html>

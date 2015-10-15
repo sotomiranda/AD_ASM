@@ -1,20 +1,14 @@
 <?php
-	$random = rand(100,200);
+	$title = 'E1';
+	$texto = 'Numero aleatorio entre 100 y 200, ambos inclusive.';
+	$aleatorio = rand(100,200);
+	$resultado = "$aleatorio, ".gettype($aleatorio); 
 ?>
 
 <html>
-	<title>
-		e1
-	</title>
+	<title><?php echo $title ?></title>
 	<body>
-		<u><b>
-			Numero aleatorio entre 100 y 200, ambos inclusive
-		</b></u>
-		<br>
-		<h1>
-			<?php
-				echo $random.", ".getType($random);
-			?>
-		</h1>
+		<p><b><u><?php echo $texto ?></u></b></p>
+		<h1><b><font size="200"><?php echo $resultado ?></font></b></h1>
 	</body>
-</html>
+	</html>

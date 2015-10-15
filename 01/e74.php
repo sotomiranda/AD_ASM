@@ -1,18 +1,13 @@
 <?php
-	$random = rand(1,100);
+	$title = 'E1';
+	$texto = 'Numero aleatorio entre 1 y 100, ambos inclusive.';
+	$aleatorio = rand(1,100);
 ?>
 
 <html>
-	<title>
-		e1
-	</title>
+	<title><?php echo $title ?></title>
 	<body>
-		<u><b>
-			Numero aleatorio entre 100 y 200, ambos inclusive
-		</b></u>
-		<br>
-		<h1>
-			<?php printf("%d,%b,%o,%x",$random,$random,$random,$random)?>
-		</h1>
+		<p><b><u><?php echo $texto ?></u></b></p>
+		<h1><b><font size="200"><?php printf("%d, %b, %o, %x", $aleatorio,$aleatorio,$aleatorio,$aleatorio) ?></font></b></h1>
 	</body>
-</html>
+	</html>
